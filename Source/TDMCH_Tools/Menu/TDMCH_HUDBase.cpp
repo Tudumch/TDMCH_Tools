@@ -3,10 +3,21 @@
 #include "Menu/TDMCH_HUDBase.h"
 #include "Menu/TDMCH_WidgetBase.h"
 #include "Blueprint/UserWidget.h"
+#include "GameFramework/GameMode.h"
 
 void ATDMCH_HUDBase::BeginPlay()
 {
     Super::BeginPlay();
+
+    Gamemode = GetWorld()->GetAuthGameMode();
+    PlayerController = GetOwningPlayerController();
+
+    if (PlayerController)
+    {
+        FInputModeUIOnly InputMode;
+        PlayerController->SetInputMode(InputMode);
+        PlayerController->bShowMouseCursor = true;
+    }
 
     AddWidget(InitialWidgetClass);
 }

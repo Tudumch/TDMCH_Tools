@@ -21,6 +21,9 @@ public:
     virtual void BeginPlay() override;
 
 protected:
+    AGameModeBase* Gamemode;
+    APlayerController* PlayerController;
+
     UPROPERTY ()
         TArray<UTDMCH_WidgetBase*> OpenedWidgetsArray = {};
 
