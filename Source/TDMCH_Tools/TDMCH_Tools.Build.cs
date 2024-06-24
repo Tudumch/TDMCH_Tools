@@ -24,9 +24,8 @@ public class TDMCH_Tools : ModuleRules
         PublicDependencyModuleNames.AddRange(
             new string[]
             {
-                "Core", "UMG"
-				// ... add other public dependencies that you statically link with here ...
-			}
+                "Core", "UMG", "EnhancedInput"
+            }
             );
 
 

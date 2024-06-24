@@ -3,7 +3,7 @@
 	"Version": 1,
 	"VersionName": "1.0",
 	"FriendlyName": "TDMCH_Tools",
-	"Description": "My personal tools for gamedev",
+	"Description": "My personal tools for gamedevelopment",
 	"Category": "Other",
 	"CreatedBy": "Tudumch",
 	"CreatedByURL": "",
@@ -19,6 +19,12 @@
 			"Name": "TDMCH_Tools",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "EnhancedInput",
+			"Enabled": true
 		}
 	]
 }
