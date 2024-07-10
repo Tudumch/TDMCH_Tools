@@ -15,7 +15,7 @@ set FULL_SCRIPT_PATH=%PROJECT_DIR%\%PLUGIN_FOLDERS_STRUCTURE%
 
 mkdir %FULL_SCRIPT_PATH%
 
-xcopy /s %~dp0\ScriptFiles\** %FULL_SCRIPT_PATH%
+xcopy /Y /s %~dp0\ScriptFiles\** %FULL_SCRIPT_PATH%
 mklink  "%PROJECT_DIR%\CleanAndRegenerate.bat" "%FULL_SCRIPT_PATH%\CleanAndRegenerate.bat"
 
 echo.

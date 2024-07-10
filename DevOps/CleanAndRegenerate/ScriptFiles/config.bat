@@ -3,7 +3,7 @@ set PROJECT_PURE_NAME=""
 set PLUGINS_NAMES=TDMCH_Tools
 
 set DIRS_TO_REMOVE=Intermediate DerivedDataCache Binaries Build
-set FILES_TO_REMOVE=*.sln
+set FILES_TO_REMOVE=*.sln *.code-workspace .vsconfig .ignore
 
 :: -----------------------------------------------------------------
 :: Check if the UE_ENGINE_PATH environment variable is set
