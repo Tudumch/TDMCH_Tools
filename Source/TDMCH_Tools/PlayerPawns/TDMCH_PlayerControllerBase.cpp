@@ -5,10 +5,10 @@
 #include "EnhancedInputSubSystems.h"
 #include "EnhancedInputComponent.h"
 
-#include "TDMCH_CharacterBase.h"
-#include "TDMCH_Character2D.h"
-#include "TDMCH_Character3D.h"
-#include "TDMCH_CharacterTopDown.h"
+#include "TDMCH_Tools/PlayerPawns/TDMCH_CharacterBase.h"
+#include "TDMCH_Tools/PlayerPawns/TDMCH_Character2D.h"
+#include "TDMCH_Tools/PlayerPawns/TDMCH_Character3D.h"
+#include "TDMCH_Tools/PlayerPawns/TDMCH_CharacterTopDown.h"
 
 void ATDMCH_PlayerControllerBase::BeginPlay()
 {
