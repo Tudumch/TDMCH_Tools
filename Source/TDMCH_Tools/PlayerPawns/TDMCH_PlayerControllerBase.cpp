@@ -29,16 +29,12 @@ void ATDMCH_PlayerControllerBase::SetupInputComponent()
     }
 
     // InputActions setup
-    if (UEnhancedInputComponent* EnhancedInputComponent =
-            CastChecked<UEnhancedInputComponent>(InputComponent))
-    {
-        EnhancedInputComponent->BindAction(
-            PauseIA, ETriggerEvent::Completed, this, &ThisClass::Pause);
-        EnhancedInputComponent->BindAction(
-            MoveIA, ETriggerEvent::Triggered, this, &ThisClass::Move);
-        EnhancedInputComponent->BindAction(
-            LookIA, ETriggerEvent::Triggered, this, &ThisClass::Look);
-    }
+    EnhancedInputComponent = CastChecked<UEnhancedInputComponent>(InputComponent);
+    if (!EnhancedInputComponent) return;
+
+    EnhancedInputComponent->BindAction(PauseIA, ETriggerEvent::Completed, this, &ThisClass::Pause);
+    EnhancedInputComponent->BindAction(MoveIA, ETriggerEvent::Triggered, this, &ThisClass::Move);
+    EnhancedInputComponent->BindAction(LookIA, ETriggerEvent::Triggered, this, &ThisClass::Look);
 }
 
 void ATDMCH_PlayerControllerBase::Pause()

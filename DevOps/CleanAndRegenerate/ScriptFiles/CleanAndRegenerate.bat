@@ -54,7 +54,7 @@ call "%RUN_BUILD_PATH%" "%PROJECT_PURE_NAME%"Editor "%PLATFORM%" Development "%U
 "%UE_ENGINE_PATH%\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.exe" -projectfiles -project="%UPROJECT%" -game -rocket -progress
 
 :: Replacing VS Code workspace cpp-config for proper intellisence work
-copy /Y "DevOps\CleanAndRegenerate\c_cpp_properties.json" ".vscode\c_cpp_properties.json"
+:: copy /Y "DevOps\CleanAndRegenerate\c_cpp_properties.json" ".vscode\c_cpp_properties.json"
 
 pause
 goto:EOF

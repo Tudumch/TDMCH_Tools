@@ -6,7 +6,7 @@
 			"intelliSenseMode": "${default}",
             "cStandard": "c17",
             "cppStandard": "c++23",
-            "compileCommands": "${workspaceFolder}\\.vscode\\compileCommands_Droppler.json",
+            "compileCommands": "${workspaceFolder}\\.vscode\\compileCommands_Default.json",
 			"includePath": [ 
                 "${workspaceFolder}\\Plugins\\**", 
                 "${workspaceFolder}\\Source\\**", 

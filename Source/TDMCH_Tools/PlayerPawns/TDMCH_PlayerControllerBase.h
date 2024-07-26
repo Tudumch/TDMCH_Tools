@@ -14,6 +14,7 @@ class TDMCH_TOOLS_API ATDMCH_PlayerControllerBase : public APlayerController
 protected:
     class ATDMCH_CharacterBase* PlayerPawn;
     class ITDMCH_CharacterInterface* CharacterInterface;
+    class UEnhancedInputComponent* EnhancedInputComponent;
 
     UPROPERTY (EditAnywhere, Category = "Input")
         class UInputMappingContext* InputMappingContext;
