@@ -1,7 +1,8 @@
-# Visual Studio 2015 user specific files
+# IDE specific files
 .vs/
 .vscode/
 .ignore
+.idea/
 
 # Compiled Object files
 *.slo
