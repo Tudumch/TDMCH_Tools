@@ -1,0 +1,9 @@
+# INSTALLATION
+Don't copy this folder to your project-folder manualy - just run setup.bat.
+
+For the correct automatic assembly of the UE-project it may need the .NET-library. 
+You can download it from here: https://dotnet.microsoft.com/download/dotnet
+
+Also you should set the UE_ENGINE_PATH environment variable to the Unreal Engine installation path. 
+For to do that, open cmd and run: setx UE_ENGINE_PATH "C:\Program Files\Epic Games\UE_5.4\Engine"
+(don't forget to change path to your current version of Unreal Engine!)
