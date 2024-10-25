@@ -12,7 +12,7 @@ class TDMCH_TOOLS_API ATDMCH_PlayerControllerBase : public APlayerController
     GENERATED_BODY()
 
 protected:
-    class ATDMCH_CharacterBase* PlayerPawn;
+    APawn* PlayerPawn;
     class ITDMCH_CharacterInterface* CharacterInterface;
     class UEnhancedInputComponent* EnhancedInputComponent;
 

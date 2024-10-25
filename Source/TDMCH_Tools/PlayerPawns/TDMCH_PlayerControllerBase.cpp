@@ -58,18 +58,6 @@ void ATDMCH_PlayerControllerBase::Move(const FInputActionValue& Value)
 
 void ATDMCH_PlayerControllerBase::DefineCoreVariables()
 {
-    PlayerPawn = CastChecked<ATDMCH_CharacterBase>(GetPawn());
-
-    if (!PlayerPawn) return;
-
-    CharacterInterface = Cast<ITDMCH_CharacterInterface>(Cast<ATDMCH_Character3D>(PlayerPawn));
-
-    if (!CharacterInterface)
-        CharacterInterface = Cast<ITDMCH_CharacterInterface>(Cast<ATDMCH_Character2D>(PlayerPawn));
-    if (!CharacterInterface)
-        CharacterInterface =
-            Cast<ITDMCH_CharacterInterface>(Cast<ATDMCH_CharacterTopDown>(PlayerPawn));
-    if (!CharacterInterface)
-        CharacterInterface =
-            Cast<ITDMCH_CharacterInterface>(Cast<ATDMCH_CharacterBase>(PlayerPawn));
+    PlayerPawn = GetPawn();
+    CharacterInterface = Cast<ITDMCH_CharacterInterface>(PlayerPawn);
 }
