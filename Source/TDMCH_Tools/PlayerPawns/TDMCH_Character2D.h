@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "PlayerPawns/TDMCH_CharacterBase.h"
+#include "TDMCH_Tools/PlayerPawns/TDMCH_CharacterBase.h"
 #include "PlayerPawns/TDMCH_CharacterInterface.h"
 #include "TDMCH_Character2D.generated.h"
 
